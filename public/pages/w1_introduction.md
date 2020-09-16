@@ -1,7 +1,3 @@
----
-layout: default
----
-
 W1 Introduction
 ===============
 
