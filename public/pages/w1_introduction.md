@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 W1 Introduction
 ===============
 
