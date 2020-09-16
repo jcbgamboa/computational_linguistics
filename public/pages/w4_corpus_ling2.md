@@ -22,49 +22,49 @@ fair if I expect you to watch at least the "main" ones.
 
 * First, I think you should watch the videos 1 to 5 of the part on Language
   Models of the Stanford course on NLP:
-    * https://www.youtube.com/watch?v=Saq1QagC8KY&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=12
+    * [https://www.youtube.com/watch?v=Saq1QagC8KY&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=12](https://www.youtube.com/watch?v=Saq1QagC8KY&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=12)
         * There is a chance you are not used to the rule
-          "P(a,b) = P(b|a)P(a)", that he talks about. This is the
+          $P(a,b) = P(b|a)P(a)$, that he talks about. This is the
           "Bayes's Rule" or "Bayes's Theorem". If you want to understand
           it better, the 3Blue1Brown has an awesome video explaining it:
-            * https://www.youtube.com/watch?v=HZGCoVF3YvM
+            * [https://www.youtube.com/watch?v=HZGCoVF3YvM](https://www.youtube.com/watch?v=HZGCoVF3YvM)
         * You might also want to know better about the Markov Assumption.
           The Khan Academy has a good and intuitive video on the topic:
-            * https://www.youtube.com/watch?v=Ws63I3F7Moc
-    * https://www.youtube.com/watch?v=paCMAZ-lKq8&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=13
+            * [https://www.youtube.com/watch?v=Ws63I3F7Moc](https://www.youtube.com/watch?v=Ws63I3F7Moc)
+    * [https://www.youtube.com/watch?v=paCMAZ-lKq8&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=13](https://www.youtube.com/watch?v=paCMAZ-lKq8&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=13)
         * You might find this video a little complicated. Honestly, I only
           added it here because it is referred back in future videos. I
           actually preferred (and recommend) the explanation of another video,
           which I think you might want to watch if you don't understand well
           how the formulas work together here. It also has good examples of
           applications:
-            * https://www.youtube.com/watch?v=GiyMGBuu45w
-    * https://www.youtube.com/watch?v=b6nwdc_fGfA&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=14
+            * [https://www.youtube.com/watch?v=GiyMGBuu45w](https://www.youtube.com/watch?v=GiyMGBuu45w)
+    * [https://www.youtube.com/watch?v=b6nwdc_fGfA&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=14](https://www.youtube.com/watch?v=b6nwdc_fGfA&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=14)
         * Do not worry much if you do not understand how exactly Perplexity
           works. The important part for this video is to understand the
           separation of the entire dataset into "Training set" and "Test set".
           We will come back to this separation when we talk about Machine
           Learning in a future class.
-    * https://www.youtube.com/watch?v=6NeUDr7YDiw&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=15
+    * [https://www.youtube.com/watch?v=6NeUDr7YDiw&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=15](https://www.youtube.com/watch?v=6NeUDr7YDiw&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=15)
         * At this point, I think it would probably be interesting for you read
           sections 2, 3 and 4 (in pages 4 to 8) of the paper "A mathematical
           theory of communication" (Shannon, 1948), which is in the Downloads
           folder (inside the "Week 4" subfolder). The "Shannon visualization
           method" that is referred to in the video comes from this part of the
           paper.
-    * https://www.youtube.com/watch?v=ZbHFLgBWgdQ&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=16
+    * [https://www.youtube.com/watch?v=ZbHFLgBWgdQ&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=16](https://www.youtube.com/watch?v=ZbHFLgBWgdQ&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=16)
 
 * Ok... but what do people actually use for Language Modeling? For a few of
   years, certain Recurrent Neural Networks became really popular. Nowadays, the
   most popular model is the GPT-2 model. On this, I'd like you to watch/read the
   following:
     * The Computerphile has a very easy-to-understand video that speaks a little
-      about RNNs: https://www.youtube.com/watch?v=rURRYI66E54 
+      about RNNs: [https://www.youtube.com/watch?v=rURRYI66E54](https://www.youtube.com/watch?v=rURRYI66E54)
         * (OFF TOPIC) This video is actually followed by a series of other
           videos, which I'll put here just in case you are interested:
-            * https://www.youtube.com/watch?v=89A4jGvaaKk
-            * https://www.youtube.com/watch?v=p-6F4rhRYLQ
-            * https://www.youtube.com/watch?v=AJxLtdur5fc
+            * [https://www.youtube.com/watch?v=89A4jGvaaKk](https://www.youtube.com/watch?v=89A4jGvaaKk)
+            * [https://www.youtube.com/watch?v=p-6F4rhRYLQ](https://www.youtube.com/watch?v=p-6F4rhRYLQ)
+            * [https://www.youtube.com/watch?v=AJxLtdur5fc](https://www.youtube.com/watch?v=AJxLtdur5fc)
     * I would like you to read Andrej Karpathy's The Unreasonable Effectiveness
       of RNNs
         * Do not worry much if there are things that are unclear/confusing. Pay
@@ -97,5 +97,5 @@ I found this playlist in Youtube which goes well along with the Corpus
 Linguistics topic. This might be a nice place for you to start if you are
 interest in the topic.
 
-https://www.youtube.com/watch?v=SZ2RtyKzU6o&list=PLKgdsSsfw-fau4PsTEOCcXsKxSmk6pJTY&index=1
+[https://www.youtube.com/watch?v=SZ2RtyKzU6o&list=PLKgdsSsfw-fau4PsTEOCcXsKxSmk6pJTY&index=1](https://www.youtube.com/watch?v=SZ2RtyKzU6o&list=PLKgdsSsfw-fau4PsTEOCcXsKxSmk6pJTY&index=1)
  

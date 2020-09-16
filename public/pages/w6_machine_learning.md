@@ -51,13 +51,13 @@ There is a chance you don't understand what that "lambda" is doing there. I
 haven't introduced lambda functions in Python to you. If you don't understand
 it, I'd like you to either watch the following video:
 
-https://www.youtube.com/watch?v=25ovCm9jKfA
+[https://www.youtube.com/watch?v=25ovCm9jKfA](https://www.youtube.com/watch?v=25ovCm9jKfA)
 
 ... or read the beginning of the following text (no need to read the entire
 thing, though -- read until you feel you understand how the lambda function
 above works):
 
-https://realpython.com/python-lambda/
+[https://realpython.com/python-lambda/](https://realpython.com/python-lambda/)
 
 ### Plotting data
 
@@ -139,6 +139,6 @@ manhattan_distance = abs(x1 - x2) + abs(y1 - y2)
  
 
 This video should be helpful in understanding these distances:
-https://www.youtube.com/watch?v=p3HbBlcXDTE
+[https://www.youtube.com/watch?v=p3HbBlcXDTE](https://www.youtube.com/watch?v=p3HbBlcXDTE)
 
 

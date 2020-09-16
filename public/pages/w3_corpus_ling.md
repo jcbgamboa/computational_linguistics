@@ -16,5 +16,5 @@ Additional links
 ----------------
 
 Lancaster University's Corpus Linguistics MOOC
-https://www.futurelearn.com/courses/corpus-linguistics
+[https://www.futurelearn.com/courses/corpus-linguistics](https://www.futurelearn.com/courses/corpus-linguistics)
  
