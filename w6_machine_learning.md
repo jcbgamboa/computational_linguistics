@@ -1,9 +1,8 @@
-Materials
-=========
+W6 Machine Learning (part 1)
+============================
 
 Notice that the slides for the parts in which I present things are available
 (as always) in the Downloads Folder.
-
 
 
 

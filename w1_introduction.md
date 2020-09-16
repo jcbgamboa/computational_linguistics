@@ -1,5 +1,5 @@
-Materials
-=========
+W1 Introduction
+===============
 
 Command Line tutorials
 ----------------------
@@ -8,10 +8,10 @@ If you have never used or are not really comfortable with the command line
 (the "terminal"), I'd like you to watch the videos in the following links.
 
 For Windows users (watch the first 5 videos):
-https://www.youtube.com/playlist?list=PL6gx4Cwl9DGDV6SnbINlVUd0o2xT4JbMu
+[https://www.youtube.com/playlist?list=PL6gx4Cwl9DGDV6SnbINlVUd0o2xT4JbMu](https://www.youtube.com/playlist?list=PL6gx4Cwl9DGDV6SnbINlVUd0o2xT4JbMu)
 
 For Mac users:
-https://www.youtube.com/watch?v=aKRYQsKR46I
+[https://www.youtube.com/watch?v=aKRYQsKR46I](https://www.youtube.com/watch?v=aKRYQsKR46I)
 
 Additionally, Mac users should take a look at the fourth video I uploaded
 for this week, "PATH tutorial", which is an introduction to the PATH variable.
@@ -31,7 +31,7 @@ things like "Conda", because I don't know it and if you end up having
 problems with it then I'll possibly not know how to help you)
 
 For both Windows and Mac users:
-https://www.youtube.com/watch?v=YYXdXT2l-Gg
+[https://www.youtube.com/watch?v=YYXdXT2l-Gg](https://www.youtube.com/watch?v=YYXdXT2l-Gg)
 
 
 
@@ -40,7 +40,7 @@ Jupyter Notebooks
 
 Watch the following video for getting to know what is Jupyter and why it
 is useful:
-https://www.youtube.com/watch?v=HW29067qVWk
+[https://www.youtube.com/watch?v=HW29067qVWk](https://www.youtube.com/watch?v=HW29067qVWk)
 
 I intend to use Jupyter Notebooks to give you lecture notes almost every
 week. Hopefully, this will be a useful way for you to learn by doing.

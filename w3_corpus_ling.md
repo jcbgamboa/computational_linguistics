@@ -1,5 +1,5 @@
-Materials
-=========
+W3 Corpus Linguistics (part 1)
+==============================
 
 The "theory" part of the class are the first three videos. You'll find in the
 "Download folder" (in the menu to the left) the four papers referred to in the

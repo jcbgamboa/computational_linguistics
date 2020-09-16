@@ -1,3 +1,8 @@
+---
+layout: default
+title: Computational Linguistics
+---
+
 # Computational Linguistics
 
 Context: see the accompanying blog post for a context of where this course was
