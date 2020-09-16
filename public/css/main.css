@@ -1,7 +1,7 @@
 /* Stronly based on https://www.w3schools.com/howto/howto_js_sidenav.asp */
 
 /* The side navigation menu */
-.sidenav {
+.sidebar-nav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -15,7 +15,7 @@
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidebar-nav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -25,6 +25,6 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidebar-nav a:hover {
   color: #f1f1f1;
 }
