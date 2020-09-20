@@ -53,6 +53,6 @@ respected, I am happy to take down whatever they tell me to.
 
 For all the things that I do own (the text of the pages, the jupyter
 notebooks, the slides, and the Youtube videos), I would like to licence this as
-[Creative Commons 4.0 Attribution Noncommercial ShareAlike](https://en.wikipedia.org/wiki/Creative_Commons_license).
+[Creative Commons 4.0 Attribution Noncommercial ShareAlike International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 
