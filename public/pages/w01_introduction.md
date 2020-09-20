@@ -5,6 +5,15 @@ layout: page
 W1 Introduction
 ===============
 
+Introduction to the course
+--------------------------
+
+You can get the slides of the course [here](/slides/01_introduction_SS2020.pdf).
+
+**INSERT VIDEOS 1 AND 2 HERE**
+
+
+
 Command Line tutorials
 ----------------------
 
@@ -17,11 +26,13 @@ For Windows users (watch the first 5 videos):
 For Mac users:
 [https://www.youtube.com/watch?v=aKRYQsKR46I](https://www.youtube.com/watch?v=aKRYQsKR46I)
 
-Additionally, Mac users should take a look at the fourth video I uploaded
+Additionally, Mac users should take a look at the following video I uploaded
 for this week, "PATH tutorial", which is an introduction to the PATH variable.
 
-(I'm assuming you know what you are doing if you are Linux. Otherwise,
+(If you are in Linux, I am assuming you know what you're doing. Otherwise,
 watching the Mac users' video is probably good enough)
+
+**INSERT PATH TUTORIAL HERE**
 
 
 
@@ -49,7 +60,9 @@ is useful:
 I intend to use Jupyter Notebooks to give you lecture notes almost every
 week. Hopefully, this will be a useful way for you to learn by doing.
 
-Take a look at the fifth video I uploaded for this week,
+Take a look at the following video I uploaded for this week,
 "Jupyter Installation" to have a notion on how to install Jupyter.
+
+**INSERT JUPYTER INSTALLATION VIDEO HERE**
 
  
