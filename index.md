@@ -3,12 +3,15 @@ layout: default
 title: Computational Linguistics
 ---
 
+[_(back to my blog)_](https://jcbgamboa.github.io)
+
 # Computational Linguistics
 
 This is a course on Computational Linguistics. This is a slightly adapted
 version of the Computational Linguistics course I gave during the Summer
 Semester of 2020 in the Technische Universität Kaiserslautern as part of my
-studies there as a PhD student (I still am a PhD student there).
+studies there as a PhD student
+([I still am a PhD student there](https://jcbgamboa.github.io/public/pages/about/)).
 
 This course was not produced only by me. While the vast majority of the
 materials you'll see in this page were edited by me, some of
@@ -53,6 +56,7 @@ respected, I am happy to take down whatever they tell me to.
 
 For all the things that I do own (the text of the pages, the jupyter
 notebooks, the slides, and the Youtube videos), I would like to licence this as
-[Creative Commons 4.0 Attribution Noncommercial ShareAlike International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
