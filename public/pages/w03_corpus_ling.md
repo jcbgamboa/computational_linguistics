@@ -15,6 +15,14 @@ You can get the slides for this class
 See the
 [licence]({{site.baseurl}}) if you want to make copies/changes to it_)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2QjioIGzBTc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lml1dnkA3F4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MOpKxGF-K6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 Unfortunately, for copyright reasons, I can't provide copies of the papers I
 refer to in these videos. Still... if you _can_ have access to them, I totally
 recommend reading them.
