@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W8 Machine Learning (part 3)
 ============================
 

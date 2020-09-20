@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W7 Machine Learning (part 2)
 ============================
 

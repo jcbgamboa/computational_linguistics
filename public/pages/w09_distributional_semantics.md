@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W9 Distributional Semantics (part 1)
 ====================================
 

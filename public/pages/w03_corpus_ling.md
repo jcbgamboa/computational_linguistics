@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W3 Corpus Linguistics (part 1)
 ==============================
 

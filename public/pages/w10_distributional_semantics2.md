@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W10 Distributional Semantics
 ============================
 

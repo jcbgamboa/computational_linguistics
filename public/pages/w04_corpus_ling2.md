@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W4 Corpus Linguistics (part 2)
 ==============================
 

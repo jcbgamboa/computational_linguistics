@@ -9,18 +9,21 @@ W2 Python / NLTK
 Python Tutorial
 ---------------
 
-I prepared a Python Tutorial. It is supposed to be a super easy introduction to
+In case you don't know any Python whatsoever, I've prepared a Python Tutorial,
+which you can download
+[here]({{site.baseurl}}/notebook/W2 Intro to Python.ipynb).
+It is supposed to be a super easy introduction to
 Python. You can get it in the Downloads folder (look for it in the menu, at the
 left of this page). There you'll find a folder called "Week 2", and a file
-called "Intro to Python.ipynb".
+called "W2 Intro to Python.ipynb".
 
 As explained in the last week, you will use Jupyter Notebook to open this file.
 Assuming you already have it installed, you should:
 
 * Open you terminal
-* `cd` to the place where you downloaded the file "Intro to Python.ipynb"
+* `cd` to the place where you downloaded the file "W2 Intro to Python.ipynb"
 * Write, in your terminal, `jupyter notebook`
-* A page in your browser will open. Select the file "Intro to Python.ipynb" in that page.
+* A page in your browser will open. Select the file "W2 Intro to Python.ipynb" in that page.
 
 Make sure to play around with the code there. This will help in your learning
 process. The tutorial is written under the assumption that 100% of your
@@ -54,11 +57,27 @@ a good "warm up exercise" for the next things we will learn.
 
 You are more than welcome to post forum questions whenever you have doubts.
 
+
 Additional Material
 -------------------
 
-You'll also find a file called "Intro to NLTK.ipynb" in the Downloads folder.
+I also created a file called "W2 Intro to NLTK.ipynb", which you can access
+[here]({{site.baseurl}}/notebook/W2 Intro to NLTK.ipynb).
 In there, you'll have a written version of the videos of this week. I guess
 I could say these are my "lecture notes". I thought I'd leave it in there in
 case you prefer to learn from written material instead of videos.
+
+Otherwise, you can watch the videos below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X_1e9QrfFR8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yIBdfzNgr08" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PsUOwLo9bWA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2ik6W4C4wGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
 

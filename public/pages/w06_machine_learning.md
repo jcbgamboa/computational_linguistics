@@ -1,3 +1,8 @@
+---
+layout: page
+---
+
+
 W6 Machine Learning (part 1)
 ============================
 
