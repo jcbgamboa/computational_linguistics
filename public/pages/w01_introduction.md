@@ -5,16 +5,14 @@ layout: page
 W1 Introduction
 ===============
 
-
-
 Introduction to the course
 --------------------------
 
-You can get the slides of the course [here](/slides/01_introduction_SS2020.pdf).
+You can get the slides of the course [here]({{site.baseurl}}/slides/01_introduction_SS2020.pdf).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2by-ZYLL1Uk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-a<iframe width="560" height="315" src="https://www.youtube.com/embed/rbaz1GAdpKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rbaz1GAdpKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
