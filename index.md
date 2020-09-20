@@ -46,17 +46,40 @@ consider that
    Youtube videos.
 
 
+
 Licence
 -------
 
-I am not fully sure I own everything that I am posting here (although I
-actually think so). In case I don't,
+I am not fully sure I own everything that I am posting here.
+
+For things that I don't own (which I believe are none),
 and in case someone who does own something here wants their ownership to be
 respected, I am happy to take down whatever they tell me to.
 
-For all the things that I do own (the text of the pages, the jupyter
-notebooks, the slides, and the Youtube videos), I would like to licence this as
+Except for the things listed in the previous paragraph
+(which I believe are none), everything here
+is licenced according to the following licence (however, read below a few
+details):
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+
+The following things are owned also by Philipp Blandford (they were mostly
+created/idealized by them, and I then heavily changed them for the purposes
+of this course).
+In these cases, if you use them, mention both of us as authors =)
+
+ * **Slides**
+    * W1 Introduction
+    * W3 Introduction
+ * **Jupyter notebooks**
+    * ...
+
+The following things are owned also by ...
+
+
+For all the other things (the text of the pages, the other jupyter
+notebooks, the other slides, and the Youtube videos), you can mention only me
+as the author.
 
 
