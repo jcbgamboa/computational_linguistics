@@ -5,12 +5,16 @@ layout: page
 W1 Introduction
 ===============
 
+
+
 Introduction to the course
 --------------------------
 
 You can get the slides of the course [here](/slides/01_introduction_SS2020.pdf).
 
-**INSERT VIDEOS 1 AND 2 HERE**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2by-ZYLL1Uk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+a<iframe width="560" height="315" src="https://www.youtube.com/embed/rbaz1GAdpKc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
@@ -32,8 +36,7 @@ for this week, "PATH tutorial", which is an introduction to the PATH variable.
 (If you are in Linux, I am assuming you know what you're doing. Otherwise,
 watching the Mac users' video is probably good enough)
 
-**INSERT PATH TUTORIAL HERE**
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_8EhOFVzMK4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Installing Python
@@ -63,6 +66,6 @@ week. Hopefully, this will be a useful way for you to learn by doing.
 Take a look at the following video I uploaded for this week,
 "Jupyter Installation" to have a notion on how to install Jupyter.
 
-**INSERT JUPYTER INSTALLATION VIDEO HERE**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/T-96UWoOD0I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
  
