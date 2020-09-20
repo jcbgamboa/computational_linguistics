@@ -70,8 +70,8 @@ of this course).
 In these cases, if you use them, mention both of us as authors =)
 
  * **Slides**
-    * W1 Introduction
-    * W3 Introduction
+    * [W1 Introduction]({{site.baseurl}}/slides/01_introduction_SS2020.pdf)
+    * [W3 Introduction]({{site.baseurl}}/slides/03_corpus_linguistics.pdf)
  * **Jupyter notebooks**
     * ...
 

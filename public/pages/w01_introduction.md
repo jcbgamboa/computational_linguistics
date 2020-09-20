@@ -9,6 +9,9 @@ Introduction to the course
 --------------------------
 
 You can get the slides of the course [here]({{site.baseurl}}/slides/01_introduction_SS2020.pdf).
+(_these slides were made in cooperation with Philipp Blandford.
+See the
+[licence]({{site.baseurl}}) if you want to make copies/changes to it_)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2by-ZYLL1Uk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
