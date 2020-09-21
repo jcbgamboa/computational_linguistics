@@ -21,6 +21,10 @@ two other people who also gave this lecture in its very first iteration
 Still... this does not necessarily mean they endorse everything I say in
 my videos.
 
+**Protip**: Since I speak quite slow, you may want to increase the
+  reproduction speed of the videos, especially if you already know a little
+  what you are watching =)
+
 
 Context
 -------
@@ -45,6 +49,25 @@ consider that
  * the "forum" should be interpreted now as the comment pages of the
    Youtube videos.
 
+
+Organization
+------------
+
+The course was organized in 11 weeks of content (this is what the "W"
+means in the menu links), plus a free week for the
+students to solve questions, and finally a week for the exam. Every week
+the students had to answer questionnaires about the content of that week,
+which counted as their "attendance". Additionally, on every
+Wednesday, we used
+[Jitsi](https://meet.jit.si/)
+to have a call in which the students could ask any questions they might
+have, be it about the questionnaire or about any administrative issue
+(e.g., they could ask about the exam, or say that the online platform
+had been down for a few days, or let me know that I forgot to answer a
+forum post, or anything like that).
+
+(I still intend to find a way to release the questionnaires, just in case
+anyone is wondering)
 
 
 Licence
@@ -76,7 +99,6 @@ In these cases, if you use them, mention both of us as authors =)
     * ...
 
 The following things are owned also by ...
-
 
 For all the other things (the text of the pages, the other jupyter
 notebooks, the other slides, and the Youtube videos), you can mention only me
