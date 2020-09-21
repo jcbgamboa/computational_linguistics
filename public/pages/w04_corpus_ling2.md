@@ -6,24 +6,32 @@ layout: page
 W4 Corpus Linguistics (part 2)
 ==============================
 
-Videos
-------
+Continuing our Python/NLTK tutorial
+-----------------------------------
 
-This week videos are a little more practical. You'll learn how to do a lot of
-things in Python. The idea is to try being a little more "applied". Then, the
-questionnaire will try forcing you to program a little. The reason for this is
-that I feel that if you don't really open Python and actually write code you
-won't really learn the programming part well.
+Our goal this week is to learn how to compare different datasets. However,
+for that, we will go through a lot of "preparation steps", learning how to
+open files, revisiting how list comprehensions work, etc.
+This week videos are a little more practical. Hopefully this is useful.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VP1YdXqjaqM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pELYqAhv_5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hegHv-lhhDw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LH4-zakDWX4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 Language Modeling
 -----------------
 
-As I said, this week would cover some Language Modeling. However, since I
+In the weekly synchronous meetings, I mentioned that this week would cover
+some Language Modeling. However, since I
 feel that I'd be doing redundant work if I created videos on this topic (but
 also because I want to save time) I decided to not make any videos. I will
 present a "curated" list of materials here, which I hope are going to be
-useful. I did watch every single video in this list, so I think it is just
-fair if I expect you to watch at least the "main" ones.
+useful.
 
 * First, I think you should watch the videos 1 to 5 of the part on Language
   Models of the Stanford course on NLP:
@@ -52,11 +60,11 @@ fair if I expect you to watch at least the "main" ones.
           Learning in a future class.
     * [https://www.youtube.com/watch?v=6NeUDr7YDiw&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=15](https://www.youtube.com/watch?v=6NeUDr7YDiw&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=15)
         * At this point, I think it would probably be interesting for you read
-          sections 2, 3 and 4 (in pages 4 to 8) of the paper "A mathematical
-          theory of communication" (Shannon, 1948), which is in the Downloads
-          folder (inside the "Week 4" subfolder). The "Shannon visualization
-          method" that is referred to in the video comes from this part of the
-          paper.
+          sections 2, 3 and 4 (in pages 4 to 8) of the paper
+          ["A mathematical theory of communication"](http://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)
+          (Shannon, 1948).
+          The "Shannon visualization method" that is referred to in the video
+          comes from this part of the paper.
     * [https://www.youtube.com/watch?v=ZbHFLgBWgdQ&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=16](https://www.youtube.com/watch?v=ZbHFLgBWgdQ&list=PLQiyVNMpDLKnZYBTUOlSI9mi9wAErFtFm&index=16)
 
 * Ok... but what do people actually use for Language Modeling? For a few of
@@ -70,10 +78,12 @@ fair if I expect you to watch at least the "main" ones.
             * [https://www.youtube.com/watch?v=89A4jGvaaKk](https://www.youtube.com/watch?v=89A4jGvaaKk)
             * [https://www.youtube.com/watch?v=p-6F4rhRYLQ](https://www.youtube.com/watch?v=p-6F4rhRYLQ)
             * [https://www.youtube.com/watch?v=AJxLtdur5fc](https://www.youtube.com/watch?v=AJxLtdur5fc)
-    * I would like you to read Andrej Karpathy's The Unreasonable Effectiveness
-      of RNNs
+    * I would like you to read Andrej Karpathy's
+      [The Unreasonable Effectiveness of RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)
         * Do not worry much if there are things that are unclear/confusing. Pay
-          attention mostly to the applications of RNNs.
+          attention mostly to the applications of RNNs. We will come back to
+          this text again in a future week, and at that point you'll hopefully
+          be able to understand more.
 
 This looks like a lot of materials, but you'll notice that you can go through
 the videos in 1h~2h. Then you'll only need to read the two text materials,
