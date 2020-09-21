@@ -11,7 +11,7 @@ Theory
 
 You can get the slides for this class
 [here]({{site.baseurl}}/slides/03_corpus_linguistics.pdf).
-(_these slides were made in cooperation with Philipp Blandford.
+(_these slides were made in cooperation with Philipp Blandfort.
 See the
 [licence]({{site.baseurl}}) if you want to make copies/changes to it_)
 

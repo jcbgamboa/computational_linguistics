@@ -64,7 +64,7 @@ details):
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
-The following things are owned also by Philipp Blandford (they were mostly
+The following things are owned also by Philipp Blandfort (they were mostly
 created/idealized by them, and I then heavily changed them for the purposes
 of this course).
 In these cases, if you use them, mention both of us as authors =)
