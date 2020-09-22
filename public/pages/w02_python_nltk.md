@@ -58,8 +58,8 @@ a good "warm up exercise" for the next things we will learn.
 You are more than welcome to post forum questions whenever you have doubts.
 
 
-Additional Material
--------------------
+Using the NLTK
+--------------
 
 I also created a file called "W2 Intro to NLTK.ipynb", which you can access
 [here]({{site.baseurl}}/notebook/W2 Intro to NLTK.ipynb).
