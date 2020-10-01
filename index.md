@@ -5,6 +5,10 @@ title: Computational Linguistics
 
 [_(back to my blog)_](https://jcbgamboa.github.io)
 
+*_I STILL DIDN'T FINISH ORGANIZING THIS PAGE. EXPLORE WITH CARE_*
+
+*_TODO: Thank the Uni Kaiserslautern and my advisor for the opportunity to give this class_*
+
 # Computational Linguistics
 
 This is a course on Computational Linguistics. This is a slightly adapted
