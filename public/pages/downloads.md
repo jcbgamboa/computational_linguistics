@@ -25,6 +25,6 @@ to know how to use them.
 Notebooks
 ---------
 
-* W2 Intro to Python: [link]({{site.baseurl}}/notebook/W2 Intro to Python.ipynb)
-* W2 Intro to NLTK: [link]({{site.baseurl}}/notebook/W2 Intro to NLTK.ipynb)
+* W2 Intro to Python: [link]({{site.baseurl}}/notebooks/W2_Intro_to_Python.ipynb)
+* W2 Intro to NLTK: [link]({{site.baseurl}}/notebooks/W2_Intro_to_NLTK.ipynb)
 
