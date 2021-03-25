@@ -20,12 +20,13 @@ you to watch it:
 
 [https://www.youtube.com/watch?v=BePQBWPnYuE](https://www.youtube.com/watch?v=BePQBWPnYuE)
 
-Gradient Descent
-----------------
 
-Please watch these videos on Neural Networks from the 3Blue1Brown. I think it
-will be SUPER USEFUL to sediment the ideas discussed this week, and also to
-prepare you for the topic of next week.
+Gradient Descent (external resources)
+-------------------------------------
+
+I'd recommend you to watch the following videos on Neural Networks by 3Blue1Brown.
+I think they will be SUPER USEFUL to sediment the ideas discussed this week, and
+also to prepare you for the topics of next week.
 
 What is a Neural Network:
 [https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1)
@@ -33,17 +34,20 @@ What is a Neural Network:
 Gradient Descent:
 [https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=2](https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=2)
 
-I honestly suggest you to watch this both before and after my videos of this
-week. If you watch before, it will help you to build some "expectations" about
+I honestly suggest you to watch this both _before_ and _after_ my videos of this
+week. Watching before will help you to build some "expectations" about
 the kinds of things you'll learn about (and it will help you A LOT with this
-week's topic). If you watch after, it will work as a super good example of how
+week's topic). Watching after will work as a super good example of how
 the things you learnt about are applied.
 
 Dataset Splits / Hyperparameters
 --------------------------------
 
-If you have difficulties understanding the first video of this week (on kNN and
-Dataset Splits), you might want to watch an alternative explanation: the Andrej
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HuImIpIk700" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+If you have difficulties understanding this video, you might want to watch
+an alternative explanation: the Andrej
 Karpathy class on the topic. It is a little more mathy, but it is really good,
 and the entire content of my video is also present there:
 
@@ -59,14 +63,23 @@ Regression
 You'll find a jupyter notebook called "W7 Regression.ipynb" in the downloads
 folder. This is what I used during my videos.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v6UrDuiIL_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Performing Regression with Gradient Descent
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8xdmiqiPWbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0MtOCya1kvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4-yc5DFklts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 Logistic Regression
 -------------------
 
-(to be read after watching video 5)
-
-Between the videos 5 and 6, I would like you to read the part on Logistic
-Regression in the jupyter notebook "W7 Rgression,ipynb", that is in the
+Now I would like you to read the part on Logistic
+Regression in the jupyter notebook `W7 Rgression,ipynb`, that is in the
 downloads folder.
 
 I found that it didn't really make sense to explain this in video, because I
@@ -74,6 +87,10 @@ feel that it is very much the same. That section is quite inspired on some
 other materials that are also linked there. If you have troubles understanding
 it, you may want to take a look at those other materials.
 
-(of course, you can also always post questions in the forum)
+
+One-vs-All Classification
+-------------------------
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dhh8I7vxmAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
