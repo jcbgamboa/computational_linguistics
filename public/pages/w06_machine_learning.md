@@ -9,6 +9,23 @@ W6 Machine Learning (part 1)
 Notice that the slides for the parts in which I present things are available
 (as always) in the Downloads Folder.
 
+Introduction
+------------
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RV7TW50o7vY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+An introduction to Numpy, Scipy and Matplotlib
+----------------------------------------------
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kD2Fn1FUeTk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Classification
+--------------
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hlcdWdNI_6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 Generating toy data
@@ -46,6 +63,11 @@ I would like to put these the first code snippets into a function called
 7
 8    return data,labels
 ```
+
+_(Take care not to interpret the name of the function incorrectly. This is a
+function that "makes data", i.e., generates a dataset. Its name contains the
+word "noiseless" because all data points are perfectly classified according
+to the label function passed as parameter)_
 
 The function receives the number of samples it should generate (the number
 of "bank customers", in our previous video) and how the labels should be
@@ -87,11 +109,13 @@ I assume this code is going to be easier to follow, since it is almost identical
 to the code in the previous video.
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/clBrQGRNxSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
 
 Preprocessing
 -------------
-
-(after watching video 4)
 
 Now you should go to the `Downloads Folder/Week 6/` and read file
 `W6 Preprocessing.ipynb`.
@@ -100,12 +124,20 @@ The next video will assume that you have read the file and understand most of
 its content. If you have troubles with the Bag of Words representations, do not
 worry much: the next video will try to clarify it.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-9CmwiD4ou8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+Classification with kNN
+-----------------
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JSrG8VB3Mj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
 Distance Measures
 -----------------
-
-(after watching video 6)
 
 When speaking about the kNN algorithm, I purposefully avoided specifying
 explicitly how the distance(d, di) was calculated. This is because there are
@@ -145,5 +177,12 @@ manhattan_distance = abs(x1 - x2) + abs(y1 - y2)
 
 This video should be helpful in understanding these distances:
 [https://www.youtube.com/watch?v=p3HbBlcXDTE](https://www.youtube.com/watch?v=p3HbBlcXDTE)
+
+
+Evaluating the performance of our Classifier
+--------------------------------------------
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6uDYAdgmR8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
