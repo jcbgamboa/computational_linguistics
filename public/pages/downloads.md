@@ -21,6 +21,7 @@ to know how to use them.
 * W1 Introduction: [link]({{site.baseurl}}/slides/01_introduction_SS2020.pdf)
 * W3 Corpus Linguistics (part 1): [link]({{site.baseurl}}/slides/03_corpus_linguistics.pdf)
 * W5 Tokenization: [link]({{site.baseurl}}/slides/05_tokenization.pdf)
+* W6 Machine Learning: [link]({{site.baseurl}}/slides/06_machine_learning.pdf)
 
 
 Notebooks
