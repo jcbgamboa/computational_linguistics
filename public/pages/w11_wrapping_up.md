@@ -31,11 +31,12 @@ may appear in the exam):
 * Word vectors do not represent synonymy (at least not in the way we are used
   to thing about it)
 
-Finally, also because this class is so "different", I don't really intend to
-make a Quiz for it. So, instead, I'd like to ask you to answer the feedback
-questionnaire about the course. It will be anonymous... you can be as harsh as
-you want =)
+I hope this course was useful. Thank you for your participation.
 
-I hope this course was useful. Thank you for your participation. In the next
-week there will only be a Q&A, and then we have the exam.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WGakSaqvo2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Eq2JUSnWzOs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*NOTICE THAT* there is more content in the .ipynb file than in the videos!
+
 
