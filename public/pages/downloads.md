@@ -23,6 +23,8 @@ to know how to use them.
 * W5 Tokenization: [link]({{site.baseurl}}/slides/05_tokenization.pdf)
 * W6 Machine Learning: [link]({{site.baseurl}}/slides/06_machine_learning.pdf)
 * W9 Distributional Semantics: [link]({{site.baseurl}}/slides/09_distributional_semantics.pdf)
+* W10 Wordnet: [link]({{site.baseurl}}/slides/10_wordnet.pdf)
+* W10 Lesk: [link]({{site.baseurl}}/slides/10_lesk.pdf)
 
 
 Notebooks
