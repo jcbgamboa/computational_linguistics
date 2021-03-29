@@ -21,7 +21,7 @@ This course was not produced only by me. While the vast majority of the
 materials you'll see in this page were (heavily) edited by me, some of
 them were partly organized/produced/written/inspired by
 two other people who also gave this lecture in its very first iteration
-(in 2018): Philipp Blandford and Kristina Kolesova.
+(in 2018): Philipp Blandfort and Kristina Kolesova.
 Still... this does not necessarily mean they endorse everything I say in
 my videos.
 
