@@ -28,13 +28,33 @@ A note on Terminology
 ---------------------
 
 The "word vectors" that are the main topic of this week are also very often
-referred to as "word embeddings". Beware that the videos I refer to use these
+referred to as "word embeddings". Beware that the videos I referred to use these
 names. "Word vectors" and "word embeddings" or even "vector embeddings" are
 just the same.
 
 
-Applications
-------------
+Co-occurrences
+--------------
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EWvGtlS4In0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Before watching the next video, please read the file
+`W9 Context and Co-occurrences.ipynb` from the Download Folder.
+
+It will describe how we convert our words into vectors, which we will then
+compare to be able to tell whether words are semantically similar.
+We compare the vectors using the _cosine similarity_. The next video
+explains how it works.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R83cyFyIg-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+Additional Materials
+--------------------
+
+### Applications
 
 After preparing these materials, I felt that you may find it pointless to
 transform the words into vectors. What do these vectors "mean"? What can we do
@@ -51,8 +71,8 @@ in the following video:
 
 [https://www.youtube.com/watch?v=TQQlZhbC5ps](https://www.youtube.com/watch?v=TQQlZhbC5ps)
 
-Additional Materials
---------------------
+
+### More sophisticated word vectors
 
 The way in which we produced our word vectors in this class is just one way to
 do it. This is a quite "unsophisticated" way of doing it nowadays. I didn't
@@ -76,17 +96,5 @@ into account the no-homonymy problems of their predecessors (but I am not really
 information on BERT in the following video:
 
 [https://www.youtube.com/watch?v=xI0HHN5XKDo](https://www.youtube.com/watch?v=xI0HHN5XKDo)
-
-
-Co-occurrences
---------------
-
-(after watching video 1)
-
-Before watching the next video, please read the file
-"W9 Context and Co-occurrences.ipynb" from the Download Folder.
-
-It will describe how we convert our words into vectors, which we will then
-compare to be able to tell whether words are semantically similar.
 
 
