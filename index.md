@@ -5,9 +5,6 @@ title: Computational Linguistics
 
 [_(back to my blog)_](https://jcbgamboa.github.io)
 
-*_I STILL DIDN'T FINISH ORGANIZING THIS PAGE. EXPLORE WITH CARE_*
-
-*_TODO: Thank the Uni Kaiserslautern and my advisor for the opportunity to give this class_*
 
 # Computational Linguistics
 
@@ -16,12 +13,15 @@ version of the Computational Linguistics course I gave during the Summer
 Semester of 2020 in the Technische Universität Kaiserslautern as part of my
 studies there as a PhD student
 ([I still am a PhD student there](https://jcbgamboa.github.io/public/pages/about/)).
+I am thankful to the Technische Universität Kaiserslautern and to my
+advisor Professor Shanley E. M. Allen for the opportunity to prepare these
+classes during my PhD.
 
 This course was not produced only by me. While the vast majority of the
-materials you'll see in this page were edited by me, some of
+materials you'll see in this page were (heavily) edited by me, some of
 them were partly organized/produced/written/inspired by
 two other people who also gave this lecture in its very first iteration
-(in 2018): ...
+(in 2018): Philipp Blandford and Kristina Kolesova.
 Still... this does not necessarily mean they endorse everything I say in
 my videos.
 
@@ -95,6 +95,9 @@ The following things are owned also by Philipp Blandfort (they were mostly
 created/idealized by him, and I then heavily changed them for the purposes
 of this course).
 In these cases, if you use them, mention both of us as authors =)
+
+Notice that the slides have only my name because I cannot be sure that
+Philipp "endorses" their final form.
 
  * **Slides**
     * [W1 Introduction]({{site.baseurl}}/slides/01_introduction_SS2020.pdf)
