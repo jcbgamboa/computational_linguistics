@@ -22,6 +22,7 @@ to know how to use them.
 * W3 Corpus Linguistics (part 1): [link]({{site.baseurl}}/slides/03_corpus_linguistics.pdf)
 * W5 Tokenization: [link]({{site.baseurl}}/slides/05_tokenization.pdf)
 * W6 Machine Learning: [link]({{site.baseurl}}/slides/06_machine_learning.pdf)
+* W9 Distributional Semantics: [link]({{site.baseurl}}/slides/09_distributional_semantics.pdf)
 
 
 Notebooks
