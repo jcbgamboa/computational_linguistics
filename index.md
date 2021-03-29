@@ -92,20 +92,29 @@ details):
 
 
 The following things are owned also by Philipp Blandfort (they were mostly
-created/idealized by them, and I then heavily changed them for the purposes
+created/idealized by him, and I then heavily changed them for the purposes
 of this course).
 In these cases, if you use them, mention both of us as authors =)
 
  * **Slides**
     * [W1 Introduction]({{site.baseurl}}/slides/01_introduction_SS2020.pdf)
-    * [W3 Introduction]({{site.baseurl}}/slides/03_corpus_linguistics.pdf)
- * **Jupyter notebooks**
-    * ...
+    * [W3 Corpus Linguistics]({{site.baseurl}}/slides/03_corpus_linguistics.pdf)
+    * [W9 Distributional Semantics]({{site.baseurl}}/slides/09_distributional_semantics.pdf)
 
-The following things are owned also by ...
+ * **Jupyter notebooks**
+    * [W6 Data Preprocessing]({{site.baseurl}}/notebooks/W6_Preprocessing.ipynb)
+    * [W9 Context and Coocurrences]({{site.baseurl}}/notebooks/W9_ContextAndCooccurrences.ipynb)
+
+The following things are owned also by Kristina Kolesova (they were mostly
+created/idealized by her, and I then heavily changed them for the purposes
+of this course).
+In these cases, if you use them, mention both of us as authors =)
+
+ * **Jupyter notebooks**
+    * [W2 Intro to NLTK]({{site.baseurl}}/notebooks/W2_Intro_to_NLTK.ipynb)
+
 
 For all the other things (the text of the pages, the other jupyter
 notebooks, the other slides, and the Youtube videos), you can mention only me
 as the author.
-
 
