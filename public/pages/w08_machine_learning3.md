@@ -39,13 +39,17 @@ Before proceeding to the next video, I'd like you to watch these two videos
 from Youtube. I believe you should be able to understand them well with the
 information you have so far. Let me know if you have doubts =)
 
-An Intro to Parts of Speech and POS Tagging
+I am not really sure if these videos "should" be in Youtube (because it looks
+like Youtube keeps shutting them down, and then that channel just reuploads
+them a little later -- but in the end this means I keep having to update the
+link to them here).
+In any case, if the links are broken, just look for their in Youtube.
 
-[https://www.youtube.com/watch?v=JhJU0Akkqzo](https://www.youtube.com/watch?v=JhJU0Akkqzo)
+Title of the video: *An Intro to Parts of Speech and POS Tagging*
+[https://youtu.be/tJBvmkNsoN8](https://youtu.be/tJBvmkNsoN8)
 
-Some Methods and Results on Sequence Models for POS Tagging
-
-[https://www.youtube.com/watch?v=Zm_bmRhbaQg](https://www.youtube.com/watch?v=Zm_bmRhbaQg)
+Title of the video: *Some Methods and Results on Sequence Models for POS Tagging*
+[https://www.youtube.com/watch?v=QMZsurbHVwQ](https://www.youtube.com/watch?v=QMZsurbHVwQ)
 
 Additionally, if you still didn't watch those 3Blue1Brown videos on Neural
 Networks (the two videos on classifying handwritten digits using a neural
