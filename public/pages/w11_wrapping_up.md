@@ -40,3 +40,12 @@ I hope this course was useful. Thank you for your participation.
 *NOTICE THAT* there is more content in the .ipynb file than in the videos!
 
 
+Where to go from here?
+----------------------
+
+The techniques we explored this week are quite new, and still "hot" in the
+NLP literature. If you are more interested in them, then you should probably
+take a look at the
+[Stanford course on Natural Language Processing with Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z).
+
+
