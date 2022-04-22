@@ -1,0 +1,251 @@
+% !TeX spellcheck = en_US
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage[dvipsnames]{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W7 Assignment -- Machine Learning 2}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+% Adapted from
+% https://tex.stackexchange.com/questions/179197/framed-or-colored-box-with-text-and-margin-notes
+\usepackage[many]{tcolorbox}
+\newtcolorbox{story}[1][]{
+  top=-10pt,
+  width=\textwidth,
+  fonttitle=\bfseries,
+  breakable,
+  %boxrule=10pt,
+  %extrude right by=4cm,
+  fonttitle=\bfseries\color{Brown},
+  colframe=LightGray,
+  colback=LightGray!10,
+  #1}
+
+
+
+\begin{document}
+\maketitle
+
+\section{Dataset Splitting}
+
+\subsection{No split}
+
+Consider the following situation. You are given a dataset $D$ containing data
+divided into 3 classes $c_1$, $c_2$ and $c_3$.
+Your goal is to create a Nearest Neighbor classifier ($k=1$) that is able to
+generalize to new data. For data, when training this classifier, you give
+\textbf{your whole dataset $D$}.
+
+Then you wonder how well this dataset generalizes to data it has never seen.
+For that, you make a subset of $D$ and use it as a training set.
+What would be the accuracy of your classifier on this subset of D?
+(select the correct answer)
+
+\begin{itemize}
+\singlespacing
+\item Something close to 100\%, but not 100\%
+\item You have no way to know
+\item 0\%
+\item 100\%
+\item 33\%
+\end{itemize}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Goals}
+
+When splitting your dataset, there is a number of things you would like your
+split to consider. Ideally, you'd like your split to be such that...
+
+(choose \textit{TRUE} or \textit{FALSE})
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+
+\item your test set is representative and balanced, so that you can test all
+      "corner cases" in the data
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your test set as has as much data as possible, so that you can be very
+      sure about how well the learnt model generalizes to new data
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your training set is bigger than the test set and validation set
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your training set homogeneously represents only certain elements of
+      the population, to make sure it doesn't learn wrong cases
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your validation set contains data points in common with the test set
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your validation set is bigger than the training set
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your test set contains data points in common with the training set
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your validation set is representative and balanced, so that you, when
+      tuning your hyperparameters, you can make sure that they consider all
+      corner cases in your data
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your validation set has as much data as possible, so that your
+      hyperparameters can get tuned to the best values possible
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your test set contains only the "corner cases" (and doesn't have data
+      related to the most common cases), because it is on the "corner cases"
+      that you are interested in
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your test set is bigger than the training set
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your training set has as much data as possible, so that your algorithm
+      can learn well
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your test set represents a different population than the training set
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item your training set is representative and balanced, so that it can learn
+      about all "corner cases" in the data
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{enumerate}
+
+
+\section{Regression}
+
+\subsection{Theory}
+
+Let's say you are given a dataset $D$, which contains several samples $d_i$,
+each of which is represented as a point in a graph.
+
+\vspace{0.5cm}
+\begin{story}[title=A note on the jargon]
+\singlespacing
+The ``columns" of each sample $d_i$ (i.e., the coordinates that determine the
+position of the point $d_i$) are generally referred to as its ``features".
+E.g., if your samples are measurements of patients, then the ``length of the
+arm" and ``size of the eye" of each patient could be ``features" inside
+each sample $d_i$.
+\end{story}
+
+Choose the correct answer:
+
+\begin{itemize}
+\singlespacing
+\item When performing regression, you normally use exactly one feature to
+      describe exactly one other feature. I.e., you cannot combine a number of
+      features.
+\item When performing linear regression, your goal is generally to find a line
+      that best describes the relationship between a number of the features in
+      your data.
+\item None of the other alternatives is correct
+\end{itemize}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Coding}
+
+
+Assume you are given a dataset $D$ which is divided into ``input features" $X$
+and ``output features" $Y$. In other words, you could divide your dataset into
+$D = (X, Y)$, where $X$ are the features are your input data points, and your
+goal is to predict the values in the $Y$.
+
+Let's say that your goal was to define a line $y=Ax+b$ for all elements
+$y \in Y$ and $x \in X$ (as we've done in the class). For this, you decided
+you'd use \verb|sklearn|, and created the following object
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+import sklearn
+from sklearn import linear_model
+reg = linear_model.LinearRegression()
+\end{minted}
+}
+
+Write the line of code that you would run so that you "linear regressor" would
+learn the coefficients \verb|A| and \verb|b| of this line.
+
+\verb|code|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\section{Gradient Descent}
+
+\subsection{Limitations}
+
+When performing gradient descent, you normally have a number of parameters that
+you can vary (in our case, $A$ and $b$) and you are given a function $L$ that
+is usually referred to as the ``loss" or ``cost". Your goal is to minimize $L$,
+i.e., to find the values of $A$ and $b$ that will cause $L$ to be the least
+possible. What limitations have we seen about it?
+(choose the correct alternative)
+
+\begin{itemize}
+\singlespacing
+\item It can only work with losses that look like straight lines.
+\item It cannot work with losses that look like a ``U".
+\item If the loss is varies a lot for different values of the parameters,
+      producing lots of small ``U's" in different points, then the Gradient
+      Descent may end up stuck in one of these ``U's"
+\item It only works with losses that look like a ``U" and never produces results
+      otherwise
+\end{itemize}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\end{document}
+

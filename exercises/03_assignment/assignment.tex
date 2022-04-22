@@ -1,0 +1,326 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W3 Assignment -- Corpus Linguistics 1}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+\maketitle
+
+% !TeX spellcheck = en_US
+\section{What is Corpus Linguistics?}
+
+Answer \textit{TRUE} or \textit{FALSE}
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+\item We defined Corpus Linguistics as
+
+\textit{A methodology that analyses corpora to address linguistic questions}
+
+This definition is an attempt to summarize the discussion from Gries (2009)
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item Most researchers believe that Corpus Linguistics is not just a new methodoly, but a completely new research enterprise, or even a new philosophical approach to Linguistics
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item There is not much debate about what Corpus Linguistics is
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{enumerate}
+
+
+\section{Corpora}
+
+\subsection{Additional Corpus Data}
+
+Choose the correct alternative:
+
+\begin{enumerate}[label=\alph*)]
+\onehalfspacing
+\item Corpora can contain additional information, such as Metadata and
+      Annotations.
+
+\item Metadata may contain, among others, the source of the data, or copyright
+      information related to the corpus files
+
+\item Metadata may contain, among others, the constituent tree of the sentences
+      in the corpus files
+
+\item Annotations may contain, among others, the age of each of the participants
+      in the conversations recorded in the corpus
+
+\item Both the first and second alternatives are correct
+
+\item Both the first and the third alternatives are correct
+
+\item Both the first and the fourth alternatives are correct
+
+\item The first, the second, and the third alternatives are correct
+\end{enumerate}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Criteria for defining a corpus}
+
+As we saw, a corpus is a collection of texts. This collection needs to be:
+
+\begin{enumerate}[label=\alph*)]
+\onehalfspacing
+\item \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ , i.e.,
+      different parts of the linguistic variety are all present in the corpus
+\item \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ , i.e.,
+      these parts need to appear in the corpus according to the proportions
+      they appear in real life
+\item \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ , i.e.,
+      ``the texts were spoken or written for some authentic communicative purpose"
+\end{enumerate}
+
+
+
+\subsection{Types of Corpora}
+
+We saw 5 dimensions in which corpora can be classified. These are:
+
+\begin{enumerate}[label=\alph*)]
+\onehalfspacing
+\item Depending on whether the corpus captures how the language varies over
+      time or just keeps a snapshot of the language at a particular point of
+      time.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ vs.
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Depending on whether the corpus focuses only in one language or has the
+      same data in several languages
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ vs.
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Depending on whether the corpus focus on the language as whole or only
+      in a particular variety/dialect/register of the language.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ vs.
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Depending on whether or not the corpus has additional corpus data that
+      represents a particular linguistic analysis
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ vs.
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Depending on whether or not the corpus can be extended over time with
+      new data
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ vs.
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{enumerate}
+
+
+
+\section{Answering Linguistic Questions}
+
+\subsection{What do we normally calculate?}
+
+What is normally calculated in Corpus Linguistics are 
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_.
+
+Generally, we are interested in two types of them: 
+
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ and
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_,
+
+i.e., how often certain linguistic elements appear in the data, and how
+often they appear along with other linguistic elements.
+
+
+\section{NLTK / Python programming}
+
+\subsection{Accessing Corpus Data}
+
+In the class, we have seen that the NLTK has a subpackage called
+\verb|gutenberg|, which you can use to get access to some books from the
+Project Gutenberg. Consider the following lines of code (In), and their
+output (Out):
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,linenos,fontsize=\footnotesize]{python}
+In [1]: import nltk
+In [2]: nltk.corpus.gutenberg.fileids()
+Out[2]: ['austen-emma.txt',
+         'austen-persuasion.txt',
+         'austen-sense.txt',
+         'bible-kjv.txt','blake-poems.txt',
+         'bryant-stories.txt',
+         'burgess-busterbrown.txt',
+         'carroll-alice.txt',
+         'chesterton-ball.txt',
+         'chesterton-brown.txt',
+         'chesterton-thursday.txt',
+         'edgeworth-parents.txt',
+         'melville-moby_dick.txt',
+         'milton-paradise.txt',
+         'shakespeare-caesar.txt',
+         'shakespeare-hamlet.txt',
+         'shakespeare-macbeth.txt',
+         'whitman-leaves.txt']
+\end{minted}
+}
+
+
+Write the line of code you'd use to get all the words in the file \verb|'chesterton-thursday.txt'|:
+
+\verb|code|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+  
+
+Write the line of code you'd use to get all the sentences in the same file:
+
+\verb|code|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+Write the line of code you'd use to get a string containing the entire file data, unsegmented by any NLTK algorithm:
+
+\verb|code|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+
+\subsection{List comprehensions}
+
+Assume the following lines of code have been run:
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,linenos,fontsize=\footnotesize]{python}
+num_list = [0,1,2,3,4,5,6,7,8,9]
+str_list = ['a', 'b', 'c', 'd', 'e', 'f']
+lst_list = [[1,2], [3,4], [5,6,7], [8], [9]]
+\end{minted}
+}
+
+
+Decide whether the statements below are correct.
+(Ideally, try out these lines in Jupyter notebook, to see what they do)
+
+\begin{itemize}
+\singlespacing
+\item The line
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = [2*i for i in num_list if i < 5]
+\end{minted}
+will produce the same effect as
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = []
+for i in num_list:
+    if (i < 5):
+        a.append(2*i)
+\end{minted}
+
+\verb|Is correct|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item The line
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = [2*i for i in num_list]
+\end{minted}
+will produce the same effect as
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = []
+for 2*i in num_list:
+    a.append(i)
+\end{minted}
+
+\verb|Is correct|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item The line
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = [2*i for i in num_list]
+\end{minted}
+will produce the same effect as
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = []
+for i in 2*num_list:
+    a.append(i)
+\end{minted}
+
+\verb|Is correct|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item The line
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = [len(i) for i in lst_list]
+\end{minted}
+will produce the list
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+[2,2,3,1,1]
+\end{minted}
+which is a list containing the length of each list inside \verb|lst_list|.
+
+\verb|Is correct|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item The line
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = [i for i in num_list + str_list]
+\end{minted}
+will produce the same as
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = num_list + str_list
+\end{minted}
+
+\verb|Is correct|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\item The line
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = [2*i for i in num_list]
+\end{minted}
+will produce the same effect as
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+a = []
+for i in num_list:
+    a.append(2*i)
+\end{minted}
+
+\verb|Is correct|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{itemize}
+
+\end{document}
+

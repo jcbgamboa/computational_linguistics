@@ -1,0 +1,176 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W4 Assignment -- Corpus Linguistics 2}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+\maketitle
+
+% !TeX spellcheck = en_US
+\section{The Brown Corpus}
+
+This week I'd like to try something new. I want to have you explore a corpus on
+your own. I have the impression that watching vides is good to get an idea about
+the topics, but you'll only really learn if you actually write the Python code
+on your own.
+
+The following questions will try to guide you in your exploration of the Brown
+Corpus. It is a general corpus of the English language, the first one with 1M
+words, and, as we saw very en passant in the last class, it can be accessed from
+the \verb|nltk.corpus.brown| subpackage. I'll leave a lot of information just
+open in the questions. The hope is that it will force you to explore a little
+more. If you have doubts, you are welcome to use the forum.
+
+\subsection*{Before you start}
+
+Open a new Jupyter Notebook and run the line:
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+import nltk
+\end{minted}
+
+You'll access mostly functions that have to do with the
+\verb|nltk.corpus.gutenberg| package. As the questions go, I'll ask you to
+run certain functions.
+
+
+\subsection{Files in the corpus}
+
+If you read Gries (2009), you'll remember that corpora are often a collection
+of text files. You might not have realized, but this is why the
+\verb|nltk.corpus.gutenberg| package comes with the function \verb|.fileids()|.
+In the gutenberg package, the file ids had an obvious meaning: each of them was
+a book; in the case of the Brown Corpus, the files do not have obviously
+identifiable names.
+
+If you run the function
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.brown.fileids()
+\end{minted}
+
+you'll see the names of the files. I'd like you to find out how many files
+are there in the corpus. Select the correct option:
+
+$~~\bigcirc$ 800
+$~~\bigcirc$ 700
+$~~\bigcirc$ 500
+$~~\bigcirc$ 844
+$~~\bigcirc$ 685
+$~~\bigcirc$ 1000
+$~~\bigcirc$ 100
+$~~\bigcirc$ 399
+
+
+\subsection{Making sense of the files}
+
+There is a better way to access the files in the corpus: through its
+categories. The nltk provides the function
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.brown.categories()
+\end{minted}
+
+for that. How many categories are in the corpus?
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Accessing the corpus words}
+
+Remember that the gutenberg package had a function
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.gutenberg.words()
+\end{minted}
+to which you could optionally pass an argument with the name of the file. This function also exists in the Brown corpus:
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.brown.words()
+\end{minted}
+Optionally, you can pass the name of a category:
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.brown.words(categories='mystery')
+\end{minted}
+
+How many unique words do you have in this ``mystery" category?
+(tip: remember the previous classes)
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Checking conditional probabilities}
+
+In this week's class we've learnt about the \verb|nltk.ConditionalFreqDist()|
+objects. Create a ConditionalFreqDist object with the data of the ``mystery"
+and ``news" genres (passing the genre as the ``condition").
+
+Now... the following is a list of modal verbs in the English language:
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+modals = ['shall', 'should', 'can', 'could', 'ought', 'may',
+          'might', 'must', 'will', 'would']
+\end{minted}
+
+There is one verb that is used very differently in these two genres. Using the object you created, find out which one that is.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Accessing sentences}
+
+Similar to the gutenberg package, the NLTK package containing the Brown Corpus
+also has a function for accessing sentences:
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.brown.sents()
+\end{minted}
+
+Again, you can optionally pass a category as a parameter to the function:
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.corpus.brown.sents(categories='mystery')
+\end{minted}
+
+Can you find out the average sentence length of the ``news" genre?
+
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\end{document}
+

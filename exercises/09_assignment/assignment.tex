@@ -1,0 +1,191 @@
+% !TeX spellcheck = en_US
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage[dvipsnames]{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+    linkbordercolor = {White},
+    urlbordercolor = .,
+    linkcolor = .,
+    urlcolor = {Blue}
+}
+
+
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W9 Assignment -- Distributional Semantics}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+%% Adapted from
+%% https://tex.stackexchange.com/questions/179197/framed-or-colored-box-with-text-and-margin-notes
+%\usepackage[many]{tcolorbox}
+%\newtcolorbox{story}[1][]{
+%  top=-10pt,
+%  width=\textwidth,
+%  fonttitle=\bfseries,
+%  breakable,
+%  %boxrule=10pt,
+%  %extrude right by=4cm,
+%  fonttitle=\bfseries\color{Brown},
+%  colframe=LightGray,
+%  colback=LightGray!10,
+%  #1}
+
+
+
+\begin{document}
+\maketitle
+
+
+\section{Concepts}
+
+\subsection{Homonymy and Polysemy}
+
+Regarding the concepts of homonymy and polysemy, we could say that...
+
+(choose \textit{TRUE} or \textit{FALSE})
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+
+\item Polysemic words are words with a single meaning
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Homonymous words have meanings that are related
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item If two words are homonymous, then they are written/pronounced the same,
+      but have unrelated meanings
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Homonymous words are synonyms (i.e., homonymous words are words with the
+      same meaning)
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Polysemic words are synonyms (i.e., homonymous words are words with the
+      same meaning)
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Homonymous words are words with opposite meanings
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Polysemic words are words with opposite meanings
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Homonymy and polysemy are just the same thing
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item A polysemic word is a word with multiple meanings that are related
+      (a.k.a. "multiple senses")
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{enumerate}
+
+
+\subsection{Examples}
+
+
+Consider the following sentences
+
+\begin{enumerate}[label=(\arabic*)]
+\singlespacing%\onehalfspacing
+\item \label{ex_good}  He was a kind man
+\item \label{ex_type}  \href{https://knowyourmeme.com/memes/what-kind-of-sorcery-is-this}{What kind of sorcery is this?}
+\item \label{ex_type2} \href{https://en.wiktionary.org/wiki/kind}{I'll pay in kind for his insult.}
+\end{enumerate}
+
+The usages of kind in the sentences \ref{ex_good} and \ref{ex_type} are an example of
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+The usages o kind in the sentences \ref{ex_type} and \ref{ex_type2} are an example of
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+
+\section{Co-occurrence matrix and its uses}
+
+\subsection{Co-occurrence matrix}
+
+Consider the following sentences: (which I am randomly writing, without any
+thought)
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+The quick brown fox and the lazy dog were never the same.
+The brown fox jumped over the lazy dog several times over
+and over again. But the lazy dog ignored it forever.
+\end{minted}
+}
+
+Using a vocabulary of 5 words, construct a co-occurrence matrix
+and input the vectors associated with each of the following words:
+
+
+\verb|dog|:    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\verb|jumped|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\verb|lazy|:   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Cosine Similarity}
+
+Let's assume that the following vectors were the correct answer for the previous questions
+
+\verb|dog:    [5,2,3,4,1]|
+
+\verb|jumped: [3,3,0,1,0]|
+
+\verb|lazy:   [5,2,3,4,2]|
+
+ 
+
+Calculate the cosine similarity between the following pairs of words:
+
+$cos($\verb|dog|   ,\verb|jumped|$)$: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+$cos($\verb|dog|   ,\verb|lazy|  $)$: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+$cos($\verb|jumped|,\verb|lazy|  $)$: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{document}
+

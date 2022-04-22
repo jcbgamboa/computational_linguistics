@@ -1,0 +1,246 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W2 Assignment -- NLTK}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+\maketitle
+
+% !TeX spellcheck = en_US
+\section{NLTK basics}
+
+\subsection{Text objects}
+
+Consider the following piece of code:
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,linenos,fontsize=\footnotesize]{python}
+import nltk
+import nltk.book
+
+t = nltk.book.text7
+print(t)
+type(t)
+len(t)
+
+set(t)
+len(set(t))
+
+len(set(t)) / len(t)
+
+t.concordance('walk')
+t.index('walk')
+\end{minted}
+}
+
+Answer \textit{TRUE} or \textit{FALSE}
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+\item Line 5 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+<Text: Wall Street Journal>
+\end{minted}
+indicating that \verb|text7| was data collected from the Wall Street Journal.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 6 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+nltk.text.Text
+\end{minted}
+indicating that \verb|t| is of the type \verb|Text|.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 7 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+100676
+\end{minted}
+indicating that \verb|t| contains 100676 characters.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 5 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+<Text: Moby Dick>
+\end{minted}
+indicating that \verb|text7| is the Moby Dick book.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 6 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+list
+\end{minted}
+indicating that \verb|t| is of the type \verb|list|
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 9 will output a data structure of the type \verb|set|
+containing all words in \verb|t|.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 7 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+100676
+\end{minted}
+indicating that \verb|t| contains 100676 words.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 9 will set \verb|t| as the default variable to be used
+in all function calls to the NLTK.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 6 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+set
+\end{minted}
+indicating that \verb|t| is of the type \verb|set|.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 7 will output the value
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+3
+\end{minted}
+because that \verb|t| contains the words ``Wall", ``Street" and
+``Journal" words.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 10 calculates the number of unique words in \verb|t|.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 12 calculates the number of sections in the Wall Street Journal data.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 10 calculates the number of sections in the Wall Street Journal data.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 12 provides a measure of the lexical diversity of \verb|t|.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 14 will output the list
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+[walk, walks, walking, walked]
+\end{minted}
+indicating all the possible endings of the word ``walk".
+
+\item Line 14 will output all the contexts in which the word ``walk" was used
+in \verb|t|.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 14 will output all the contexts in which the word ``walk" was used in
+\verb|t|, along with whether it was used with the correct ending.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The output of the line 14 follows the Key Word outside of Context format.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The output of the line 14 follows the Key Word in Context format.
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 15 outputs a new data structure that allows for an efficient search
+of all occurrences of the word ``walk".
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 15 outputs a list containing the index of all occurrences of the word
+``walk".
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Line 15 outputs the index of the first occurrences of the word``walk".
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{enumerate}
+
+
+
+\subsection{Plots 1}
+
+Consider the following piece of code:
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,linenos,fontsize=\footnotesize]{python}
+import nltk
+import nltk.book
+
+t = nltk.book.text7
+\end{minted}
+}
+
+Write the line of code that would create a plot that shows the positions of
+occurrences in \verb|t| of the word ``knowledge".
+
+\verb|command|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{Plots 2}
+
+Consider the following piece of code:
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,linenos,fontsize=\footnotesize]{python}
+import nltk
+import nltk.book
+
+t = nltk.book.text7
+freqs = nltk.FreqDist(t)
+\end{minted}
+}
+
+Write the line of code that would create a plot showing the frequencies of
+the 20 most common words \verb|t|.
+
+\verb|command|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\end{document}
+

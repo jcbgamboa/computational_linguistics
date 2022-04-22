@@ -1,0 +1,213 @@
+% !TeX spellcheck = en_US
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W5 Assignment -- Tokenization}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+
+\begin{document}
+\maketitle
+
+\section{Tokens and Types}
+
+\subsection{Definitions}
+
+Select the correct option:
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing
+\item The sentence
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+my cellphone and your cellphone
+\end{minted}
+contains 4 tokens and 5 types
+
+\item The sentence
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+my cellphone and your cellphone
+\end{minted}
+contains 5 tokens and 5 types
+
+\item The sentence
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+my cellphone and your cellphone
+\end{minted}
+contains 5 tokens but only 4 types
+
+\item The sentence
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+my cellphone and your cellphone
+\end{minted}
+contains 5 tokens but only 3 types
+
+\end{enumerate}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\subsection{True/False}
+
+Answer \textit{TRUE} or \textit{FALSE} for the following assertions:
+
+
+\begin{itemize}
+\singlespacing
+\item The text
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+my Cellphone and your cellphone
+\end{minted}
+contains 5 tokens and, debatably, either 4 or 5 types
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The text
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+my, your, and their cellphone
+\end{minted}
+contains 7 tokens and 6 types
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The text
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+Rosa's cellphone is blue
+\end{minted}
+contains, debatably,
+either 4 tokens and 4 types
+or 5 tokens and 5 types
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{itemize}
+
+
+
+
+
+
+\section{Text manipulation / Regular Expressions}
+
+\subsection{Instructions}
+
+Consider the following lines, which are run before the lines in the
+``Questions" section below.
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+import re
+string = "The man and the woman...the the... the dog and the cat"
+\end{minted}
+
+In the gap texts below, write the output of the code immediately preceding it.
+For example, for the code
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+print('example')
+\end{minted}
+
+you should write
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+example
+\end{minted}
+
+(i.e., without the quotes that denote a string in Python)
+
+Ideally, you should run those lines and try to see why you get each of
+the outputs. If you have difficulties in understanding the meaning of the
+Regular Expressions, remember to visit those websites I suggested in the
+videos. 
+
+
+\subsection{Questions}
+
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+if(re.search('man', string):
+    print('contains')
+\end{minted}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('man', 'men', string)
+\end{minted}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('the', 'a', string)
+\end{minted}
+  
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('[a-z]', 'a', string)
+\end{minted}
+  
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('[^a-z]', '_', string)
+\end{minted}
+  
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('\W+', '_', string)
+\end{minted}
+  
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('(the)', '_\\1_', string)
+\end{minted}
+  
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+ 
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+re.sub('(the|man)', '_\\1_', string)
+\end{minted}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\end{document}
+
