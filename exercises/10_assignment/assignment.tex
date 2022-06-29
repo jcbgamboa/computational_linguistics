@@ -1,0 +1,216 @@
+% !TeX spellcheck = en_US
+\documentclass[a4paper,11pt]{scrartcl}
+
+%\renewcommand{\arraystretch}{1.5}
+
+
+%\lvsemester{SS 2021}
+%\lvname{Computational Linguistics}
+%\zeit{60 minutes}
+%\datum{July 21\textsuperscript{th} 2021}
+
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage[outputdir=out]{minted}
+\usepackage[dvipsnames]{xcolor} % to access the named colour LightGray
+\definecolor{LightGray}{gray}{0.9}
+
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+    linkbordercolor = {White},
+    urlbordercolor = .,
+    linkcolor = .,
+    urlcolor = {Blue}
+}
+
+
+
+
+% Load the setspace package
+\usepackage{setspace}
+% Using \doublespacing in the preamble 
+% changes text to double line spacing
+\doublespacing
+
+
+\title{W10 Assignment -- Distributional Semantics II}
+\subtitle{Computational Linguistics}
+
+\author{John Gamboa}
+\date{\today}
+
+\setkomafont{author}{\sffamily}
+\setkomafont{date}{\sffamily}
+
+
+
+\setlength{\parindent}{0pt}
+
+
+%% Adapted from
+%% https://tex.stackexchange.com/questions/179197/framed-or-colored-box-with-text-and-margin-notes
+%\usepackage[many]{tcolorbox}
+%\newtcolorbox{story}[1][]{
+%  top=-10pt,
+%  width=\textwidth,
+%  fonttitle=\bfseries,
+%  breakable,
+%  %boxrule=10pt,
+%  %extrude right by=4cm,
+%  fonttitle=\bfseries\color{Brown},
+%  colframe=LightGray,
+%  colback=LightGray!10,
+%  #1}
+
+
+
+\begin{document}
+\maketitle
+
+
+\section{Concepts}
+
+\subsection{Lemmas e Lexemes}
+
+Regarding the concepts of homonymy and polysemy, we could say that...
+
+(choose \textit{TRUE} or \textit{FALSE})
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+
+\item The set \{cat, cats\} forms the \textit{lemma} associated with the
+      \textit{lexeme} cat
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The set \{cat, cats\} forms the \textit{lexeme} associated with the
+      \textit{lemma} cat
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The set \{snow, snowed, snowing, snowed\} is a lexeme because it contains
+      the forms associated with the word \textit{snow}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Each of the elements of a given lexeme is a lemma
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Each of the elements of a given lexeme \textit{could, by convention} be a lemma
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item Each of the elements of a given lemma is a lexeme
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{enumerate}
+
+
+\section{Wordnet}
+
+\subsection{Concepts}
+
+Regarding the concepts of homonymy and polysemy, we could say that...
+
+(choose \textit{TRUE} or \textit{FALSE})
+
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+
+\item The Wordnet contains only words of the classes
+      \textit{nouns}, \textit{verbs}, \textit{adjectives}, \textit{adverbs}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The remaining classes of words (pronouns, prepositions, determiners) are
+      referred to as \textit{content words}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The Wordnet is organized into synsets in order to be able to make
+      distinctions between homonymy and polysemy
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The Wordnet is organized into synsets
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The Wordnet makes no distinction between homonymy and polysemy
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{enumerate}
+
+
+\subsection{Semantic Relations}
+
+First, you will need the following code 
+
+{\singlespacing
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{python}
+from nltk.corpus import wordnet as wn
+\end{minted}
+}
+
+Using the Wordnet, get
+
+\begin{enumerate}[label=\alph*)]
+\singlespacing%\onehalfspacing
+
+\item The definition of the synset \textit{sun.n.01}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item An example for the synset \textit{get.v.01}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item All lemmas of the synset \textit{break.v.02}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The relation between \textit{cold.n.01} and \textit{respiratory\_disease.n.01}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\item The relation between \textit{freeze.v.02} and \textit{solidify.v.02}
+
+\verb|answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\end{enumerate}
+
+
+\section{Word Sense Disambiguation}
+
+Consider the sentence
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+The quick brown fox had been already domesticated and become like the common dog:
+unpleasant and prehistoric like the lazy wolf.
+\end{minted}
+
+And the definitions of dog (from the Wordnet):
+
+\begin{minted}[bgcolor=LightGray,fontsize=\footnotesize]{text}
+dog.n.01: a member of the genus Canis (probably descended from the common wolf) that
+          has been domesticated by man since prehistoric times; occurs in many breeds
+
+dog.n.02: a dull unattractive unpleasant girl or woman
+\end{minted}
+
+Run the Lesk algorithm, showing the results for each of the definitions.
+
+\verb|Count for dog.n.01|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\verb|Count for dog.n.02|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\verb|Final answer|: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+\end{document}
+
