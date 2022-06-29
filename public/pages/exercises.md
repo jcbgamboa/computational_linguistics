@@ -20,6 +20,7 @@ toward what is "important" to know from this class.
 * W7:  [link]({{site.baseurl}}/exercises/out/07_assignment.pdf)
 * W8:  [link]({{site.baseurl}}/exercises/out/08_assignment.pdf)
 * W9:  [link]({{site.baseurl}}/exercises/out/09_assignment.pdf)
+* W10:  [link]({{site.baseurl}}/exercises/out/10_assignment.pdf)
 
 
 
