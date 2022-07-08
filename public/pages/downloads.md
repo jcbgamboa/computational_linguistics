@@ -39,5 +39,5 @@ Notebooks
 * W8 Overfitting: [link]({{site.baseurl}}/notebooks/W8_Overfitting.ipynb)
 * W8 POS Tagging with the NLTK (and a few other tasks): [link]({{site.baseurl}}/notebooks/W8_POSTaggingWithNLTK_AndAFewOtherTasks.ipynb)
 * W9 Context and Co-occurences: [link]({{site.baseurl}}/notebooks/W9_ContextAndCooccurrences.ipynb)
-* W11 Wrapping Up: [link]({{site.baseurl}}/notebooks/W11_WrappingUp.ipynb)
+* W11 Vector Embeddings: [link]({{site.baseurl}}/notebooks/W11_VectorEmbeddings.ipynb)
 
